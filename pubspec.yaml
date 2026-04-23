@@ -1,0 +1,64 @@
+name: smart_badge
+description: Smart Badge Scanner - Gestion de présence avec ML Kit
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── ML Kit – 4 services ──────────────────────────────
+  google_mlkit_face_detection: ^0.13.2
+  google_mlkit_translation: ^0.13.1
+  google_mlkit_text_recognition: ^0.15.1
+  google_mlkit_barcode_scanning: ^0.14.2
+  # ── Caméra ───────────────────────────────────────────
+  camera: ^0.12.0+1
+
+  # ── Base de données ──────────────────────────────────
+  sqflite: ^2.3.0
+  path: ^1.9.0
+
+  # ── State management ─────────────────────────────────
+  provider: ^6.1.1
+
+  # ── Préférences ──────────────────────────────────────
+  shared_preferences: ^2.2.2
+
+  # ── Notifications ────────────────────────────────────
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.4
+
+  # ── QR Code affichage ────────────────────────────────
+  qr_flutter: ^4.1.0
+
+  # ── Audio & Vibration ────────────────────────────────
+  audioplayers: ^6.0.0
+  vibration: ^3.1.8
+
+  # ── Export ───────────────────────────────────────────
+  pdf: ^3.11.0
+  path_provider: ^2.1.2
+  share_plus: ^13.0.0
+
+  # ── Charts ───────────────────────────────────────────
+  fl_chart: ^1.2.0
+
+  # ── Utilitaires ──────────────────────────────────────
+  uuid: ^4.3.3
+  permission_handler: ^12.0.1
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/
+    - assets/images/
